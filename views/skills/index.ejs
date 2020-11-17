@@ -9,22 +9,24 @@
 <body>
   <h1>Skills</h1>
   <ul>
-    <% skills.forEach(function(s) { %>
-      <li>
-        <%= s.dev %>
-        <ul>
+  <% skills.forEach(function(s) { %>
+    <li>
+    <%= s.dev %>
+      <ul>
+        <li>
           HTML: <%= s.html ? 'Yup' : 'Nope' %>
-        </ul> 
-        <ul>
+        </li>
+        <li>
           CSS: <%= s.css ? 'Yup' : 'Nope' %>
-        </ul> 
-        <ul>
+        </li>
+        <li>
           JS: <%= s.js ? 'Yup' : 'Nope' %>
-        </ul> 
-        <ul>
+        </li>
+        <li>
           Express: <%= s.express ? 'Yup' : 'Nope' %>
-        </ul> 
-      </li>
+        </li>
+      </ul>
+    </li>
     <% }); %>
   </ul>
 </body>
