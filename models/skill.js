@@ -1,8 +1,8 @@
 const skills = [
-  {dev: 'Chris', HTML: true, CSS: true, JS: true, Express: true},
-  {dev: 'Jim', HTML: true, CSS: true, JS: true, Express: true},
-  {dev: 'Martin', HTML: true, CSS: true, JS: true, Express: true},
-  {dev: 'Shaw', HTML: true, CSS: true, JS: true, Express: false}
+  {dev: 'Chris', html: true, css: true, js: true, express: true},
+  {dev: 'Jim', html: true, css: true, js: true, express: true},
+  {dev: 'Martin', html: true, css: true, js: true, express: false},
+  {dev: 'Shaw', html: true, css: true, js: true, express: true}
 ];
 
 module.exports = {

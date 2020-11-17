@@ -11,8 +11,18 @@
     <% skills.forEach(function(s) { %>
       <li>
         <%= s.dev %>
-          - 
-        <%= s.HTML ? 'true' : 'false' %>
+        <ul>
+          HTML: <%= s.html ? 'true' : 'false' %>
+        </ul> 
+        <ul>
+          CSS: <%= s.css ? 'true' : 'false' %>
+        </ul> 
+        <ul>
+          JS: <%= s.js ? 'true' : 'false' %>
+        </ul> 
+        <ul>
+          Express: <%= s.express ? 'true' : 'false' %>
+        </ul> 
       </li>
     <% }); %>
   </ul>
