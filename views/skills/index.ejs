@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
   <title>Express Dev Skills</title>
 </head>
 <body>
@@ -12,16 +13,16 @@
       <li>
         <%= s.dev %>
         <ul>
-          HTML: <%= s.html ? 'true' : 'false' %>
+          HTML: <%= s.html ? 'Yup' : 'Nope' %>
         </ul> 
         <ul>
-          CSS: <%= s.css ? 'true' : 'false' %>
+          CSS: <%= s.css ? 'Yup' : 'Nope' %>
         </ul> 
         <ul>
-          JS: <%= s.js ? 'true' : 'false' %>
+          JS: <%= s.js ? 'Yup' : 'Nope' %>
         </ul> 
         <ul>
-          Express: <%= s.express ? 'true' : 'false' %>
+          Express: <%= s.express ? 'Yup' : 'Nope' %>
         </ul> 
       </li>
     <% }); %>
