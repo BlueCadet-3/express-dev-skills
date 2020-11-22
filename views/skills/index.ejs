@@ -7,27 +7,19 @@
   <title>Express Dev Skills</title>
 </head>
 <body>
-  <h1>Skills</h1>
+  <a href="/skills/new">Add Skill</a>
+  <h1>Skills as of <%= time %></h1>
   <ul>
-  <% skills.forEach(function(s) { %>
+    <% skills.forEach(function(s) { %>
     <li>
-    <%= s.dev %>
-      <ul>
-        <li>
-          HTML: <%= s.html ? 'Yup' : 'Nope' %>
-        </li>
-        <li>
-          CSS: <%= s.css ? 'Yup' : 'Nope' %>
-        </li>
-        <li>
-          JS: <%= s.js ? 'Yup' : 'Nope' %>
-        </li>
-        <li>
-          Express: <%= s.express ? 'Yup' : 'Nope' %>
-        </li>
-      </ul>
+    <%= s.skill %>
+    <form action="/skills/<%= s.id %>?_method=DELETE"
+      class="delete-form" method="POST">
+      <button type="submit">X</button>
+    </form>
     </li>
     <% }); %>
+  </ul>
   </ul>
 </body>
 </html>

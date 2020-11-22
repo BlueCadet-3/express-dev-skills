@@ -1,14 +1,21 @@
-const skills = [
-  {dev: 'Chris', html: true, css: true, js: true, express: true},
-  {dev: 'Jim', html: true, css: true, js: true, express: true},
-  {dev: 'Martin', html: true, css: true, js: true, express: false},
-  {dev: 'Shaw', html: true, css: true, js: true, express: true}
-];
+const skills = [];
 
 module.exports = {
-  getAll
+  getAll,
+  create,
+  deleteOne
 };
 
 function getAll() {
   return skills;
+}
+
+function create(skill) {
+  skill.id = Date.now() % 1000000;
+  skills.push(skill);
+}
+
+function deleteOne(id) {
+  const idx = skills.findIndex(skill => skill.id === parseInt(id));
+  skills.splice(idx, 1);
 }
